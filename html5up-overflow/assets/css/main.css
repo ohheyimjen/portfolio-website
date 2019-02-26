@@ -66,6 +66,9 @@ input::-moz-focus-inner {
 }
 
 input, select, textarea {
+
+	/* ? Insert ginormous question mark here ? */
+
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -78,13 +81,20 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+	/* Is this a makeover reference?*/
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
 
 	body {
 		background-color: #183026;
+
+		/*what exact function does this have, if there's no actual image? 
+		Is it just a placeholder for one?
+		Is this the same as an <img> placed in the html?*/
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -105,6 +115,8 @@ input, select, textarea {
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+
+			/* Why all the !importants? Aren't these a no-no?*/
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -133,6 +145,10 @@ input, select, textarea {
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+
+		/* Is this inherited from parent or grandparent? 
+		Is there an over-writer between the two? */
+
 		color: inherit;
 		text-decoration: none;
 	}
@@ -152,6 +168,10 @@ input, select, textarea {
 	}
 
 	em, i {
+
+		/* Is this the same em we just learned about? 
+		You can add properties to it like this??*/
+
 		font-style: italic;
 	}
 
